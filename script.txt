@@ -1,0 +1,123 @@
+﻿Introduction
+Hello. We are a group of advocates from SST and we are here to discuss the importance of wearing masks and social distancing measures to prevent the spread of COVID-19.
+
+
+According to the World Health Organisation, there have been about 128 million people worldwide infected with COVID-19 as of March 31 this year. Of this 128 million infections, there have been around 2.8 million deaths, putting the death rate at approximately 2.2%. 
+
+
+Our project aims to find out whether social distancing and wearing of masks affects the spread of COVID-19 by mathematically modelling the issue through a computer simulation and real world data.
+Variables, Assumptions and Simplifications
+Before presenting our findings and model, here are our independent variables.
+
+
+Firstly, there is the percentage of people who are wearing masks, which help reduce the number of droplets that may be inhaled when a person is exposed to a COVID-19 patient. 
+
+
+Secondly, there is the percentage of the population that practices a 1m social distancing, which helps reduce the spread of the virus.
+
+
+Here are our dependent variables.
+
+
+Firstly, there is the total number of infections.
+
+
+Secondly, there is the probability of an exposure becoming a new infection. 
+
+
+Thirdly, there is the social exposure rate. This refers to the number of people that people are exposed to on a given day.
+
+
+Next, there is the growth factor, g, which refers to the percentage change in the number of cases. 
+
+
+The model also makes a few assumptions that may help define the model better.
+
+
+It is assumed that the time before a person knows whether they are infected from a possible exposure is 2 weeks.
+
+
+It is assumed that people wear their masks and do not remove masks throughout the pandemic when in close contact with other people.
+
+
+It is assumed that people do not leave or enter the country, introducing and deporting cases.
+
+
+It is assumed that at the start of the pandemic, only 1 case of COVID-19 is introduced into the community.
+
+
+It is assumed that after a person has been infected and recovered from COVID-19, anti-bodies against the virus develop and thus the person is no longer susceptible to the virus and disease.
+
+
+This calculation makes a few simplifications to remove the tediousness of the experimentation process.
+
+
+Firstly, it is taken that the recovery time of the virus is approximately 2 weeks
+
+
+Secondly, it is taken that all masks worn are the same and have an effectiveness of 50% individually
+
+
+Thirdly, the incubation period of COVID-19 is taken to be 14 days
+
+
+Lastly, the strand of COVID-19 virus is the same
+Mathematical Model - Infections Function
+To aid in modelling the mathematical function, we go through a process of various functions that may be used in modelling the number of infections. Due to time, we will only present the final function used, a Richards’ Logistic Curve, that has 3 main features which may repeat.
+
+
+The curve is defined based on the following, the flexibility of the curve, the epidemic size, the infection rate and the lag phase.
+
+
+* Initially, the graph is very similar to a exponential curve
+* Eventually, the gradient decreases and becomes constant at the inflection point for some time
+* Lastly, assuming no new clusters or outbreaks and continuous safe management measures, the infections should begin flattening and becoming constant
+* However, if a cluster of outbreak does occur again, certain sections of the curve may repeat itself, with the worst being another exponential-like increase
+
+
+All real world data used is attributed to the CSSE at Johns Hopkins University and simulation data was created by ourselves
+Mathematical Model - Simulation Data
+To model the number of COVID-19 infected people, we came up with a simulation and ran 4 different scenarios with gathered data in graphs
+
+
+In all the simulations, the constant parameters that are unchanged throughout the tests in the experimentation process are the original number of susceptible people, the original number of infected people, the recovery time of infected people, and the movement speed of people
+
+
+The established base case for the comparison is the simulation Test 1, where no measures were practised
+
+
+This is simulation Test 2, where only mask wearing was practised
+
+
+This is simulation Test 3, where only social distancing was practised
+
+
+This is simulation Test 4, where both social distancing and mask wearing was practised
+
+
+Between Test 1 to Test 4, the independent factor that changed was not only the transmission rate but also the social distancing, which resulted in the slowest infection rate compared to the other 3 tests. With both of the factors affecting the infection rate combined, the infection rate reduced significantly.
+Mathematical Model - Real World Data
+In real life, the situation is not much different. In Singapore, social distancing and mask wearing was made mandatory upon the spread of COVID-19.
+
+
+Here is the graph of the number of people in Singapore infected with COVID-19. This graph starts with a high rate of infection but caps out quickly when social distancing and mask wearing was made mandatory.
+
+
+In India, the density of the population makes it difficult to practice social distancing. Poverty also makes it difficult to access masks. Here is the graph of the number of people in India infected with COVID-19. This graph has an increasing rate of infection.
+
+
+In the United States, only a portion of the population practices social distancing and mask wearing. Here is the graph of the number of people in the United States infected with COVID-19. This graph has an increasing rate of infection.
+Conclusion
+From all the aforementioned mathematical models, we can tell that wearing masks and social distancing is effective in reducing the growth of COVID-19 cases.
+
+
+For the simulation, the graphs for Test 2 and 3 were not as steep as the base case since people exclusively either wore masks or were socially distanced. However, in Test 4, when people both wore masks and socially distanced, the curve was much flatter, meaning the cases for a given period of time would be fewer and the cases at any point in time would not exceed potential hospital capacity.
+
+
+This can also be seen mirrored in the real life data where Singapore’s curve flattened out much faster than the US or India.
+
+
+The function used to graph these cases also showed a distinct exponential increase initially before SMM implementation, a slowly decreasing slope with an inflection point where the gradient is constant, finally slowly leveling off. The final leveling off is dependent on the time at which the SMM were implemented and the maximum infection size.
+
+
+In conclusion, in order to “flatten the curve”,  we must all play our part in following the SMM put in place to ensure its timely success that would eventually lead to the maximum point of the curve where there are no more new infections.
